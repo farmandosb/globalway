@@ -15,6 +15,15 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+    <style>
+      .body__container {
+        display: flex;
+        background-color: gray;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+    </style>
     <title>GlobalWay-HomePage</title>
   </head>
   <body>
@@ -108,22 +117,40 @@
         </div>
       </div>
     </nav>
-    <div class="body__container">
-      <div class="presentacion">
-        <h1 class="presentacion__h1">Bienvenido a Global Way</h1>
-        <h3 class="presentacion__h3">Casa de cambio conveniente y rapida</h3>
-      </div>
-      <div class="imagenHome">
-        <figure>
-          <img
-            src="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            srcset="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            alt="money transfer globe"
-            width="500"
-            height="500"
-          />
-        </figure>
-      </div>
+    <div class="body-container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Consec.</th>
+            <th scope="col">ID/Pasaporte Cliente</th>
+            <th scope="col">Nombre Cliente</th>
+            <th scope="col">Moneda Recibida</th>
+            <th scope="col">Total a Pagar</th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+            <th scope="col"></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">1</th>
+            <td>Mark</td>
+            <td>Otto</td>
+            <td>@mdo</td>
+          </tr>
+          <tr>
+            <th scope="row">2</th>
+            <td>Jacob</td>
+            <td>Thornton</td>
+            <td>@fat</td>
+          </tr>
+          <tr>
+            <th scope="row">3</th>
+            <td>Larry the Bird</td>
+            <td>@twitter</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
     <footer class="footer">
       <p>Copyright &copy; Colegio Universitario de Cartago 2023</p>

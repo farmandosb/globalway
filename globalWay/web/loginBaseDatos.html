@@ -15,7 +15,29 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <title>GlobalWay-HomePage</title>
+    <title>GlobalWay-Login</title>
+    <style>
+      .body__container {
+        display: flex;
+        background-color: gray;
+        justify-content: center;
+        align-items: center;
+        height: 50vh;
+      }
+
+      .cajalogin {
+        height: 400px;
+        width: 400px;
+        border: 2px solid blue;
+        background-color: whitesmoke;
+        color: black;
+        border-radius: 5px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -109,20 +131,18 @@
       </div>
     </nav>
     <div class="body__container">
-      <div class="presentacion">
-        <h1 class="presentacion__h1">Bienvenido a Global Way</h1>
-        <h3 class="presentacion__h3">Casa de cambio conveniente y rapida</h3>
-      </div>
-      <div class="imagenHome">
-        <figure>
-          <img
-            src="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            srcset="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            alt="money transfer globe"
-            width="500"
-            height="500"
-          />
-        </figure>
+      <div class="cajalogin">
+        <form action="">
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label">Usuario BD:</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Usuario" />
+          </div>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label">Password</label>
+            <input type="password" class="form-control" id="formGroupExampleInput2" placeholder="password" />
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
       </div>
     </div>
     <footer class="footer">

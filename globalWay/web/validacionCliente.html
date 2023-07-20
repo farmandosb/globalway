@@ -15,7 +15,21 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <title>GlobalWay-HomePage</title>
+    <style>
+      form {
+        margin: 10px;
+      }
+      h2 {
+        margin: 30px;
+      }
+      .body__container {
+        margin: 5% 10%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <title>GlobalWay-Reservas</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -109,21 +123,39 @@
       </div>
     </nav>
     <div class="body__container">
-      <div class="presentacion">
-        <h1 class="presentacion__h1">Bienvenido a Global Way</h1>
-        <h3 class="presentacion__h3">Casa de cambio conveniente y rapida</h3>
-      </div>
-      <div class="imagenHome">
-        <figure>
-          <img
-            src="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            srcset="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            alt="money transfer globe"
-            width="500"
-            height="500"
-          />
-        </figure>
-      </div>
+      <h2>Buscar Cliente para Reserva</h2>
+      <form class="formulario">
+        <div class="cajaInputsClientes">
+          <div class="mb-3">
+            <label for="consCliente" class="form-label">Id/Pasaporte:</label>
+            <input type="text" class="form-control" id="consCliente" name="consCliente" />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Buscar por ID</button>
+        <br />
+      </form>
+      <form class="formulario">
+        <div class="cajaInputsClientes">
+          <div class="mb-3">
+            <label for="consCliente" class="form-label">Mail:</label>
+            <input type="text" class="form-control" id="consCliente" name="consCliente" />
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Buscar por Email</button>
+        <br />
+      </form>
+      <form class="formulario">
+        <div class="cajaInputsClientes">
+          <div class="mb-3">
+            <label for="consCliente" class="form-label">Consecutivo Cliente:</label>
+            <input type="text" class="form-control" id="consCliente" name="consCliente" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Buscar por Consecutivo</button>
+        <br />
+      </form>
     </div>
     <footer class="footer">
       <p>Copyright &copy; Colegio Universitario de Cartago 2023</p>

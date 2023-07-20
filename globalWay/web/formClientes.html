@@ -15,7 +15,19 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <title>GlobalWay-HomePage</title>
+    <style>
+      .formulario {
+        margin: 35px;
+      }
+
+      .body__container {
+        margin: 5% 10%;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <title>GlobalWay-Clientes</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -109,21 +121,60 @@
       </div>
     </nav>
     <div class="body__container">
-      <div class="presentacion">
-        <h1 class="presentacion__h1">Bienvenido a Global Way</h1>
-        <h3 class="presentacion__h3">Casa de cambio conveniente y rapida</h3>
-      </div>
-      <div class="imagenHome">
-        <figure>
-          <img
-            src="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            srcset="https://c.pxhere.com/images/9a/9e/56521f0c75315ca3ae63492d7b4a-1445659.jpg!d"
-            alt="money transfer globe"
-            width="500"
-            height="500"
-          />
-        </figure>
-      </div>
+      <h2 class="titulo" name="tituloH2">Nuevo Cliente</h2>
+      <form class="formulario">
+        <div class="cajaInputsClientes">
+          <div class="mb-3">
+            <label for="consCliente" class="form-label">Consecutivo:</label>
+            <input type="text" class="form-control" id="consCliente" name="consCliente" disabled />
+          </div>
+          <div class="mb-3">
+            <label for="idPasaporte" class="form-label">N° ID/Pasaporte:</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="idPasaporte"
+              name="idPasaporte"
+              placeholder="AB-123456"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nacionalidadPasaporte" class="form-label">Nacionalidad de Id:</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="nacionalidadPasaporte"
+              name="nacionalidadPasaporte"
+              placeholder="Costa Rica"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="nombreCliente" class="form-label">Nombre</label>
+            <input
+              required
+              type="text"
+              class="form-control"
+              id="nombreCliente"
+              name="nombreCliente"
+              placeholder="Nombre Apellido"
+            />
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input required type="email" class="form-control" id="email" name="email" placeholder="user@mail.com" />
+          </div>
+          <div class="mb-3">
+            <label for="telefono" class="form-label">Telefono:</label>
+            <input required type="text" class="form-control" id="telefono" name="telefono" placeholder="1234567890" />
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Agregar Cliente</button>
+        <button class="btn btn-info">Reset</button>
+
+        <button class="btn btn-danger">Cancelar</button>
+      </form>
     </div>
     <footer class="footer">
       <p>Copyright &copy; Colegio Universitario de Cartago 2023</p>
