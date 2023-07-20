@@ -1,3 +1,10 @@
+<%-- 
+    Document   : formClientes
+    Created on : 19 jul 2023, 21:28:05
+    Author     : JDEM_
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -30,9 +37,9 @@
     <title>GlobalWay-Clientes</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="font-weight: bolder; font-size: 1.65rem; color: blue"
+        <a class="navbar-brand" href="index.jsp" style="font-weight: bolder; font-size: 1.65rem; color: blue"
           >GlobalWay</a
         >
         <button
@@ -46,80 +53,15 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="validacionCliente.html" style="font-weight: bold"
-                >Nueva Transaccion</a
-              >
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Reservas
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="validacionCliente.html">Nueva Reserva</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mantenimientoReservas.html">Busqueda Reservas</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Clientes
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="formClientes.html">Nuevo Cliente</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="mantenientoClientes.html">Busqueda Clientes</a>
-                </li>
-              </ul>
-            </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Monedas
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="monedasDisponibles.html">Monedas Disponibles</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="formMonedas.html">Agregar Nueva Moneda</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="loginBaseDatos.html">Actualizar Base Datos</a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
       </div>
+      <a
+        class="navbar-brand"
+        href="index.jsp"
+        style="font-weight: bolder; font-size: 1rem; color: rgb(10, 89, 121); justify-self: center"
+        >Home</a
+      >
     </nav>
+    
     <div class="body__container">
       <h2 class="titulo" name="tituloH2">Nuevo Cliente</h2>
       <form class="formulario">
@@ -181,3 +123,4 @@
     </footer>
   </body>
 </html>
+

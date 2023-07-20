@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+    <servlet>
+        <servlet-name>servletMonedasDisponivles</servlet-name>
+        <servlet-class>servLets.servletMonedasDisponivles</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>svletMantenimientoMonedas</servlet-name>
+        <servlet-class>servLets.svletMantenimientoMonedas</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>svletNuevaMoneda</servlet-name>
+        <servlet-class>servLets.svletNuevaMoneda</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>svletEliminarMoneda</servlet-name>
+        <servlet-class>servLets.svletEliminarMoneda</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>servletMonedasDisponivles</servlet-name>
+        <url-pattern>/servletMonedasDisponivles</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>svletMantenimientoMonedas</servlet-name>
+        <url-pattern>/svletMantenimientoMonedas</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>svletNuevaMoneda</servlet-name>
+        <url-pattern>/svletNuevaMoneda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>svletEliminarMoneda</servlet-name>
+        <url-pattern>/svletEliminarMoneda</url-pattern>
+    </servlet-mapping>
+</web-app>

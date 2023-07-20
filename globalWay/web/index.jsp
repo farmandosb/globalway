@@ -1,3 +1,11 @@
+<%-- 
+    Document   : index
+    Created on : 19 jul 2023, 20:04:46
+    Author     : JDEM_
+--%>
+
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -20,7 +28,7 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
-        <a class="navbar-brand" href="index.html" style="font-weight: bolder; font-size: 1.65rem; color: blue"
+        <a class="navbar-brand" href="index.jsp" style="font-weight: bolder; font-size: 1.65rem; color: blue"
           >GlobalWay</a
         >
         <button
@@ -37,7 +45,7 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="validacionCliente.html" style="font-weight: bold"
+              <a class="nav-link active" aria-current="page" href="validacionCliente.jsp" style="font-weight: bold"
                 >Nueva Transaccion</a
               >
             </li>
@@ -54,10 +62,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="validacionCliente.html">Nueva Reserva</a>
+                  <a class="dropdown-item" href="validacionCliente.jsp">Nueva Reserva</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="mantenimientoReservas.html">Busqueda Reservas</a>
+                  <a class="dropdown-item" href="mantenimientoReservas.jsp ">Busqueda Reservas</a>
                 </li>
               </ul>
             </li>
@@ -74,10 +82,10 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="formClientes.html">Nuevo Cliente</a>
+                  <a class="dropdown-item" href="formClientes.jsp ">Nuevo Cliente</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="mantenientoClientes.html">Busqueda Clientes</a>
+                  <a class="dropdown-item" href="mantenimientoClientes.jsp ">Busqueda Clientes</a>
                 </li>
               </ul>
             </li>
@@ -94,13 +102,19 @@
               </a>
               <ul class="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="monedasDisponibles.html">Monedas Disponibles</a>
+                  <form action="servletMonedasDisponivles" method="get">
+                    <button class="dropdown-item" type="submit">Mostrar Monedas</button>
+                  </form>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="formMonedas.html">Agregar Nueva Moneda</a>
+                  <form action="svletNuevaMoneda" method="get">
+                    <button class="dropdown-item" type="submit">Nueva Moneda</button>
+                  </form>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="loginBaseDatos.html">Actualizar Base Datos</a>
+                  <form action="svletMantenimientoMonedas" method="get">
+                    <button class="dropdown-item" type="submit">Mantenimietno Monedas</button>
+                  </form>
                 </li>
               </ul>
             </li>
