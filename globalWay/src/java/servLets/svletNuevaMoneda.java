@@ -54,12 +54,12 @@ public class svletNuevaMoneda extends HttpServlet {
             out.println("<title>Exito</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>se ha agregado la Siguiente Moneda "+ monedaConfirmacion.getNombreMoneda() +" con exito:</h1>");
+            out.println( "<h1>Se ha agregado la Siguiente Moneda "+ monedaConfirmacion.getNombreMoneda() +" con exito:</h1>");
             out.println("<p>Nombre: "+ monedaConfirmacion.getPaisOrigen()+" </p>");
             out.println("<p>Pais: "+ monedaConfirmacion.getNombreMoneda() +" </p>");
             out.println("<p>Tipo Cambio: "+ String.valueOf(monedaConfirmacion.getCambioUnDolar())+" </p>");
             out.println("<p>Comision: "+ String.valueOf(monedaConfirmacion.getComisionPorcentaje()) +" </p>");
-            out.println("<a href=\"index.jsp\">Comision: "+ "Home" +"% </a>");
+            out.println("<a href=\"index.jsp\">Home</a>");
             
             
             out.println("</body>");

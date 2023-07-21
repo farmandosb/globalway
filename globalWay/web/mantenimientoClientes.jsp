@@ -71,7 +71,17 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <% ArrayList<moneda> listaMonedas = (ArrayList) request.getSession().getAttribute("atributoMantenimientoMonedas");
+               Iterator<moneda> iterador = listaMonedas.iterator();
+               while(iterador.hasNext()){
+                    moneda monedaImprimir = iterador.next();
+                    String idMoneda = String.valueOf(monedaImprimir.getIdMoneda());
+                    String paisOrigen = monedaImprimir.getPaisOrigen();
+                    String nombreMoneda = monedaImprimir.getNombreMoneda();
+                    String cambioUnDolar = String.valueOf(monedaImprimir.getCambioUnDolar());
+
+                %>
+            <tr>
             <th scope="row">1</th>
             <td>Mark</td>
             <td>Otto</td>

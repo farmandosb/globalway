@@ -15,6 +15,47 @@ import logica.moneda;
  * @author JDEM_
  */
 public class monedasDB {
+    
+    public static moneda crearMonedaConId(moneda monedaIngresada){
+      int idMoneda= monedaIngresada.getIdMoneda();
+             String paisOrigen;
+             String nombreMoneda;
+             double cambioUnDolar;
+             double comisionPorcentaje;
+         
+           
+            String comandoSql = "select * from monedas where idMoneda="+idMoneda;
+        try{
+            ResultSet rs = conexionDB.ejecutarQueryConRS(comandoSql);
+            while (rs.next()){
+                 idMoneda = Integer.parseInt(rs.getString(1));
+                    paisOrigen = rs.getString(2);
+                    nombreMoneda = rs.getString(3);
+                    cambioUnDolar = Double.parseDouble(rs.getString(4));
+                    comisionPorcentaje = Double.parseDouble(rs.getString(5));
+                    monedaIngresada =(new moneda(idMoneda, paisOrigen, nombreMoneda, cambioUnDolar, comisionPorcentaje));
+
+        }}
+        catch (Exception e) {
+            System.out.println("Error: " + e.getMessage());
+        }
+
+        return monedaIngresada;
+     }
+    
+    public static moneda eliminarMoneda(moneda monedaIngresada) {
+        int idMoneda= monedaIngresada.getIdMoneda();
+        String comandoSql = "delete monedas where idMoneda =" + idMoneda;
+        monedaIngresada = crearMonedaConId( monedaIngresada);
+         try {
+            conexionDB.ejecutarQuery(comandoSql);
+            }catch (Exception e)
+            {
+                System.out.println("Error: " + e.getMessage());
+            }   
+        return monedaIngresada;
+    }
+    
      public static moneda insertarMoneda(moneda monedaIngresada) {
          moneda monedaConsultada = new moneda();
          

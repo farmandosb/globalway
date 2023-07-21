@@ -85,7 +85,10 @@
                   <a class="dropdown-item" href="formClientes.jsp ">Nuevo Cliente</a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="mantenimientoClientes.jsp ">Busqueda Clientes</a>
+                  
+                  <form action="svletMantenimientoClientes" method="get">
+                    <button class="dropdown-item" type="submit">Mantenimiento Clientes</button>
+                  </form>
                 </li>
               </ul>
             </li>

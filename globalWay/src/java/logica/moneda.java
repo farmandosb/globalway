@@ -77,4 +77,8 @@ public class moneda {
         return monedasDB.insertarMoneda(monedaIngresada);
     }
     
+    public static moneda eliminarMonedaObj(moneda monedaIngresada){
+        return monedasDB.eliminarMoneda(monedaIngresada);
+    }
+    
 }

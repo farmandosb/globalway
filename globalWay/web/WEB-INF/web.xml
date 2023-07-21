@@ -16,6 +16,10 @@
         <servlet-name>svletEliminarMoneda</servlet-name>
         <servlet-class>servLets.svletEliminarMoneda</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>svletMantenimientoClientes</servlet-name>
+        <servlet-class>servLets.svletCliente.svletMantenimientoClientes</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>servletMonedasDisponivles</servlet-name>
         <url-pattern>/servletMonedasDisponivles</url-pattern>
@@ -31,5 +35,9 @@
     <servlet-mapping>
         <servlet-name>svletEliminarMoneda</servlet-name>
         <url-pattern>/svletEliminarMoneda</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>svletMantenimientoClientes</servlet-name>
+        <url-pattern>/svletMantenimientoClientes</url-pattern>
     </servlet-mapping>
 </web-app>

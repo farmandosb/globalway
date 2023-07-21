@@ -91,17 +91,17 @@
                     <td><%= cambioUnDolar%></td>
                     <td>
                         <form action="svletMantenimientoMonedas" method="get">
-                            <button class="btn btn-success" type="submit">Consultar</button>
+                            <button class="btn btn-success" type="submit" name="botonConsultar" value="<%=idMoneda%>">Consultar</button>
                         </form>
                     </td>
                     <td>
                         <form action="svletMantenimientoMonedas" method="get">
-                            <button class="btn btn-warning" type="submit">Modificar</button>
+                            <button class="btn btn-warning" type="submit" name="botonModificar" value="<%=idMoneda%>">Modificar</button>
                         </form>
                     </td>
                     <td>
-                        <form action="svletMantenimientoMonedas" method="get">
-                            <button class="btn btn-danger" type="submit">Eliminar</button>
+                        <form action="svletEliminarMoneda" method="post">
+                            <button class="btn btn-danger" type="submit" name="botonEliminar" value="<%=idMoneda%>">Eliminar</button>
                         </form>
                     </td>
                 </tr>

@@ -4,6 +4,9 @@
  */
 package logica;
 
+import java.util.ArrayList;
+import modelo.clientesDB;
+
 /**
  *
  * @author JDEM_
@@ -74,6 +77,18 @@ public class cliente {
 
     public void setTelefonoCliente(String telefonoCliente) {
         this.telefonoCliente = telefonoCliente;
+    }
+    
+    public static ArrayList<cliente> getClientes(){
+        return clientesDB.listaTodosClientes();
+    }
+    
+    public static cliente setClienteObj(cliente clienteIngresado){
+        return clientesDB.insertarCliente(clienteIngresado);
+    }
+    
+    public static cliente eliminarClienteObj(cliente clienteIngresado){
+        return clientesDB.eliminarCliente(clienteIngresado);
     }
     
    
